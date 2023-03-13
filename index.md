@@ -53,7 +53,7 @@ goodbye.txt  hello.txt  list-examples-grader  perl5
 list-examples-grader  perl5
 ```
   
-In this example, the -f option stops rm from outputting an error message that hello does not exist. It simply removes the existing files without any error messages.    
+In this example, the -f option stops rm from outputting an error message saying that the file hello does not exist. It simply removes the existing files without any error messages.    
   
 Example 2:   
 ```
