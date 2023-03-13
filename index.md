@@ -46,24 +46,14 @@ This option makes rm not ask the user for confirmation for every file being remo
   
 Example 1:   
 ```
-[cs15lwi23ama@ieng6-201]:list-examples-grader:505$ ls
-ExecExamples.class  ListExamples.class       TestListExamples.class
-ExecHelpers.class   ListExamples.java        TestListExamples.java
-GradeServer.class   Server.class             URLHandler.class
-GradeServer.java    Server.java              grade.sh
-Handler.class       ServerHttpHandler.class  lib
-IsMoon.class        StringChecker.class      student-submission
-[cs15lwi23ama@ieng6-201]:list-examples-grader:506$ rm -f URLHandler.class
-[cs15lwi23ama@ieng6-201]:list-examples-grader:507$ ls
-ExecExamples.class  ListExamples.class       TestListExamples.class
-ExecHelpers.class   ListExamples.java        TestListExamples.java
-GradeServer.class   Server.class             grade.sh
-GradeServer.java    Server.java              lib
-Handler.class       ServerHttpHandler.class  student-submission
-IsMoon.class        StringChecker.class
+[cs15lwi23ama@ieng6-201]:~:576$ ls
+goodbye.txt  hello.txt  list-examples-grader  perl5
+[cs15lwi23ama@ieng6-201]:~:577$ rm -f hello hello.txt goodbye.txt
+[cs15lwi23ama@ieng6-201]:~:578$ ls
+list-examples-grader  perl5
 ```
   
-In this example, the -f option stops rm from needing to prompt the user to confirm the deletion. It simply removes the file without any prompting.    
+In this example, the -f option stops rm from outputting an error message that hello does not exist. It simply removes the existing files without any error messages.    
   
 Example 2:   
 ```
