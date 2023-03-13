@@ -126,7 +126,6 @@ rm: cannot remove 'empty/': Is a directory
 [cs15lwi23ama@ieng6-201]:~:515$ rm -d empty/
 [cs15lwi23ama@ieng6-201]:~:516$ ls
 list-examples-grader  perl5
-
 ```
   
 In this example, the rm command deletes an empty folder with the -d option. Without the option, the command errors as rm cannot remove directories unless options allow it to.    
