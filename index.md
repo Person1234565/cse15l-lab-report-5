@@ -15,7 +15,7 @@ rm: remove write-protected regular file 'lab7/.git/objects/40/9fe006b3ca9186ec54
 list-examples-grader  perl5
 ```  
   
-In this example, .   
+In this example, rm is able to remove a directory because of the -r option. It then recursively deletes the contents of folders and subfolders in the specified directory.   
   
 Example 2:  
 ```
@@ -51,7 +51,7 @@ Handler.class       ServerHttpHandler.class  student-submission
 IsMoon.class        StringChecker.class
 ```
   
-In this example, .   
+In this example, the -f option stops rm from needing to prompt the user to confirm the deletion. It simply removes the file without any prompting.    
   
 Example 2:   
 ```
@@ -60,7 +60,7 @@ Example 2:
   
 In this example, .    
 
-This option can be useful .    
+This option is useful because it allows you to quickly delete files without needing to confirm each deletion if the file is protected. You can also pair this option with -r to completely remove folders in a single execution of the command.    
   
 Source: https://man7.org/linux/man-pages/man1/rm.1.html  
 
@@ -75,7 +75,7 @@ rm: remove regular file 'Server.class'? yes
 rm: remove regular file 'TestListExamples.class'? yes
 ```
   
-In this example, .   
+In this example, the -i option forces rm to prompt the user for confirmation when deleting each file. Without the option, rm would automatically delete the files without prompting as long as the file was not protected.    
   
 Example 2:   
 ```
@@ -84,7 +84,7 @@ Example 2:
   
 In this exampe, .   
   
-This option is extremely useful .   
+This option is useful if you want to make sure you aren't deleting important files. It allows you to double check the files you are deleting one by one to account for any mistakes you may make.    
   
 Source: https://man7.org/linux/man-pages/man1/rm.1.html    
   
@@ -115,6 +115,6 @@ Example 2:
 
 In this example, the rm command. 
 
-This option can be useful when trying to .    
+This option can be useful when trying to specify directories for rm to delete without wanting to use -r. It could also help detect and refrain from removing folders that are not empty. This option may also help you clear out your workspace by allowing you to remove empty folders from command line.     
   
 Source: https://man7.org/linux/man-pages/man1/rm.1.html  
